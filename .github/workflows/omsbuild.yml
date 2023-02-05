@@ -2,14 +2,14 @@ name: OMS CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ feature/arm-build ]
   pull_request:
     branches: [ master ]
 
 jobs:
   build:
     name: OMSAgent Build & Test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - name: Checkout OMS-Agent-For-Linux Repo
