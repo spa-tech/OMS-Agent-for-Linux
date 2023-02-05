@@ -1,5 +1,4 @@
 name: OMS CI
-
 on:
   push:
     branches: [ feature/arm-build ]
